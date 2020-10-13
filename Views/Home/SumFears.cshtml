@@ -1,5 +1,27 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿
+<h1>Sum of all Fears</h1>
+
+<form asp-action="SumFears">
+    <div class="row">
+        <div class="col text-center">
+            <input type="text" name="input0" placeholder="First number...">
+            <input type="text" name="input1" placeholder="Second number...">
+            <input type="text" name="input2" placeholder="Third number...">
+            <input type="text" name="input3" placeholder="Fourth number...">
+            <input type="text" name="input4" placeholder="Fifth number...">
+
+            <input type="text" name="inputK" placeholder="The K value...">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <button class="btn btn-dark" name="fizzBtn">Find the pair</button>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col text-center">
+            @ViewData["Result"]
+        </div>
+    </div>
+</form>

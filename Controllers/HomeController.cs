@@ -102,6 +102,33 @@ namespace FizzCat.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult SumFears()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult SumFears(int input0, int input1, int input2, int input3, int input4, int inputk)
+        {
+            int[] oneArray = new int[] { input0, input1, input2, input3, input4 };
+
+            bool found = false;
+
+            for (int i = 0; i < oneArray.Length; i++)
+            {
+                int checkValue = inputk - oneArray[i];
+
+                if (oneArray.Contains(checkValue))
+                {
+                    found = true;
+                    break;
+                }                             
+            }
+            ViewData["Result"] = found; 
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
