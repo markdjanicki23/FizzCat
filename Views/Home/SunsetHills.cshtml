@@ -1,0 +1,25 @@
+﻿
+<h1>Sunset Hills</h1>
+
+<form asp-action="SunsetHills">
+    <div class="row">
+        <div class="col text-center">
+            <input type="text" name="input0" placeholder="Building one...">
+            <input type="text" name="input1" placeholder="Building two...">
+            <input type="text" name="input2" placeholder="Building three...">
+            <input type="text" name="input3" placeholder="Building four...">
+            <input type="text" name="input4" placeholder="Building five...">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <button class="btn btn-dark" name="sunBtn">Sunset Hills</button>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col text-center">
+            @ViewData["Result"]
+        </div>
+    </div>
+</form>

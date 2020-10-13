@@ -1,0 +1,19 @@
+﻿
+<h1>TacocaT</h1>
+
+<form asp-action="TacocaT">
+    <div class="row">
+        <div class="col">
+            <input type="text" name="theWord" />
+        </div>
+        <div class="col">
+            <button class="btn btn-dark" type="submit" name="tacoBtn">TacocaT</button>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col h2 text-center">
+            @ViewData["Result"]
+        </div>
+    </div>
+</form>

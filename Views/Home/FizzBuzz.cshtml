@@ -1,0 +1,23 @@
+﻿<h1>FizzBuzz</h1>
+
+<form asp-action="FizzBuzz">
+    <div class="row">
+        <div class="col text-center">
+            <input type="text" name="input1" placeholder="First number...">
+            <input type="text" name="input2" placeholder="Second number...">
+            <input type="text" name="range1" placeholder="Starting from...">
+            <input type="text" name="range2" placeholder="Ending with...">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <button class="btn btn-dark" name="fizzBtn">FizzBuzz!</button>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col text-center">
+            @ViewData["Result"]
+        </div>
+    </div>
+</form>
