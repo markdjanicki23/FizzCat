@@ -98,10 +98,10 @@ namespace FizzCat.Controllers
                     count++;
                     newArray.Add(oneArray[i]);
                     currMax = oneArray[i];
-                }
-                ViewData["Result"] = ($"{count} + {newArray}");
+                }              
             }
-                return View();
+            ViewData["Result"] = ($"Count: {count} Buildings: [{string.Join(", ",newArray)}]");
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
